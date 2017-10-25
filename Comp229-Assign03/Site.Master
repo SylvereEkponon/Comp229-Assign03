@@ -13,6 +13,7 @@
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/app.css" rel="stylesheet" />
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -38,9 +39,9 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                         <ul class="nav navbar-nav navbar-right">
-                            <li id="student" runat="server"><a href="Student.aspx"><i class="fa fa-user-o fa-lg" aria-hidden="true"></i>  Student</a></li>
-                            <li id="course" runat="server"><a href="Course.aspx"><i class="fa fa-question fa-lg" aria-hidden="true"></i>  Course</a></li>
-                            <li id="update" runat="server"><a href="Update.aspx"><i class="fa fa-pencil" aria-hidden="true"></i>  Update</a></li>
+                            <li id="student" runat="server"><a href="Students.aspx"><i class="fa fa-user-o fa-lg" aria-hidden="true"></i>  Student</a></li>
+                            <li id="course" runat="server"><a href="Courses.aspx"><i class="fa fa-book fa-lg" aria-hidden="true"></i>  Courses</a></li>
+                            <li id="update" runat="server"><a href="Update.aspx"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i>  Update</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -53,7 +54,7 @@
         </div>
         <footer role="contentinfo">
             <div class="row">
-                  <div class="col-md-4 col-md-offset-4">
+                  <div class="col-md-3 col-md-offset-5">
                 &copy;&nbsp;Copyright 2017 - Sylvere Ekponon
                       </div>
             </div>
