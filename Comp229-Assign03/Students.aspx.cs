@@ -29,17 +29,20 @@ namespace Comp229_Assign03
                 StudentGridView.DataBind();
 
 
-
+                //populate courseTitleAndGrade 
                 var courseTitleAndGrade = (from course in db.Courses
                                            join enrol in db.Enrollments
                                            on course.CourseID equals enrol.CourseID
                                            where enrol.StudentID == StudentID
-                                           select new { CourseID=course.CourseID,Title = course.Title, Grade=enrol.Grade });
+                                           select new { CourseID=course.CourseID,Title = course.Title, Grade=enrol.Grade,Credit=course.Credits });
 
+                //bind the result to the CourseTitleAndGradeGridView
                 CourseTitleAndGradeGridView.DataSource = courseTitleAndGrade.ToList();
                 CourseTitleAndGradeGridView.DataBind();
 
             }
         }
+
+
     }
 }
