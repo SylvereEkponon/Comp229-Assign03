@@ -53,7 +53,31 @@ namespace Comp229_Assign03
 
         protected void SaveButton_Click(object sender, EventArgs e)
         {
+            // use EF to connect to the server
+            using (BabyloneContext db = new BabyloneContext())
+            {
+                //Query the database for the row to be updated
+                var query = (from student in db.Students
+                                where student.StudentID == StudentID
+                                select student);
 
+
+                //add form data to the new student record
+                foreach (var student in query)
+                {
+                    student.LastName = LastNameTextBox.Text;
+                    student.FirstMidName = FirstNameTextBox.Text;
+                    student.EnrollmentDate = Convert.ToDateTime(EnrollmentDateTextBox.Text);
+
+                }
+
+                //Submit the changes to the database
+                db.SaveChanges();
+
+                //redirect
+                Response.Redirect("~/Default.aspx");
+
+            }
         }
     }
 }
