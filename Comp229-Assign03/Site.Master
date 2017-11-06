@@ -20,6 +20,7 @@
 </head>
 <body>
  <form id="form1" runat="server">
+     <asp:ScriptManager ID="Assignment3ScriptManager" runat="server" EnablePartialRendering="true"/>
         <header role="navigation">
             <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container">

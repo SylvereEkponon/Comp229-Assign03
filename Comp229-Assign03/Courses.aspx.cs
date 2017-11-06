@@ -17,7 +17,29 @@ namespace Comp229_Assign03
 
         protected void StudentsPerCourseGridView_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
+            //store which row was clicked
+            int selectedRow = e.RowIndex;
 
+            //get the selected EnrollmentID
+            int EnrollmentID = Convert.ToInt32(StudentsPerCourseGridView.DataKeys[selectedRow].Values["EnrollmentID"]);
+
+            using (BabyloneContext db = new BabyloneContext())
+            {
+                var removedStudent = (from studentRec in db.Enrollments
+                                      where studentRec.EnrollmentID == EnrollmentID
+                                      select studentRec);
+
+                //remove the selected student
+                foreach (var item in removedStudent)
+                {
+                    db.Enrollments.Remove(item);
+                }
+
+                db.SaveChanges();
+
+                //refresh the grid
+                this.GetStudents();
+            }
         }
         /// <summary>
         /// This method gets the student data from the DB

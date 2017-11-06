@@ -31,6 +31,15 @@ namespace Comp229_Assign03 {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// Assignment3ScriptManager control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager Assignment3ScriptManager;
+        
+        /// <summary>
         /// student control.
         /// </summary>
         /// <remarks>

@@ -24,21 +24,28 @@
 
                 <h1>Student List</h1>
                 <a href="StudentDetails.aspx" class="btn btn-success btn-sm">
-                    <i class="fa fa-plus"></i> Add Student
+                    <i class="fa fa-plus"></i>Add Student
                 </a>
+                <asp:UpdatePanel ID="StudentListUpdatePanel" runat="server">
+                    <ContentTemplate>
 
-                <asp:GridView ID="StudentsGridView" runat="server" AutoGenerateColumns="false"
-                    CssClass="table  table-bordered table-striped table-hover">
-                    <Columns>
-                        <asp:BoundField DataField="LastName" HeaderText="Last Name" Visible="true" />
-                        <asp:BoundField DataField="FirstMidName" HeaderText="First Name" Visible="true" />
+                        <asp:GridView ID="StudentsGridView" runat="server" AutoGenerateColumns="false"
+                            CssClass="table  table-bordered table-striped table-hover" AllowPaging="true" PageSize="8"
+                            OnPageIndexChanging="StudentsGridView_PageIndexChanging" PagerStyle-CssClass="pagination-lg">
+                            <Columns>
+                                <asp:BoundField DataField="LastName" HeaderText="Last Name" Visible="true" />
+                                <asp:BoundField DataField="FirstMidName" HeaderText="First Name" Visible="true" />
 
 
-                        <asp:HyperLinkField Text="Select" ControlStyle-CssClass="btn btn-primary btn-sm"
-                            runat="server" DataNavigateUrlFields="StudentID" DataNavigateUrlFormatString="Students.aspx?StudentID={0}" />
+                                <asp:HyperLinkField Text="Select" ControlStyle-CssClass="btn btn-primary btn-sm"
+                                    runat="server" DataNavigateUrlFields="StudentID" DataNavigateUrlFormatString="Students.aspx?StudentID={0}" />
 
-                    </Columns>
-                </asp:GridView>
+                            </Columns>
+                        </asp:GridView>
+
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+
 
             </div>
         </div>

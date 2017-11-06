@@ -2,11 +2,11 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
-        
+
         <h2>Student List </h2>
         <hr />
-        <asp:GridView ID="StudentGridView" runat="server" AutoGenerateColumns="false"
-            CssClass="table  table-bordered table-striped table-hover" >
+        <asp:GridView id="StudentGridView" runat="server" autogeneratecolumns="false"
+            cssclass="table  table-bordered table-striped table-hover">
             <Columns>
                 <asp:BoundField DataField="StudentID" HeaderText="Student ID" Visible="true" />
                 <asp:BoundField DataField="LastName" HeaderText="Last Name" Visible="true" />
@@ -21,8 +21,8 @@
             </Columns>
         </asp:GridView>
 
-                <asp:GridView ID="CourseTitleAndGradeGridView" runat="server" AutoGenerateColumns="false"
-            CssClass="table  table-bordered table-striped table-hover">
+        <asp:GridView id="CourseTitleAndGradeGridView" runat="server" autogeneratecolumns="false"
+            cssclass="table  table-bordered table-striped table-hover">
             <Columns>
                 <asp:HyperLinkField DatatextField="Title" HeaderText="Course Title" Visible="true" 
                     DataNavigateUrlFields="CourseID" DataNavigateUrlFormatString="Courses.aspx?CourseID={0}"/>
@@ -34,6 +34,6 @@
             </Columns>
         </asp:GridView>
 
-        <a href="Default.aspx">Back to Home</a>
+        <a class="btn btn-primary btn-sm" href="Default.aspx">Back to Home</a>
     </div>
 </asp:Content>

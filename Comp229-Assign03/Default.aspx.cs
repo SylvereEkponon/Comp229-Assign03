@@ -43,5 +43,14 @@ namespace Comp229_Assign03
 
             }
         }
+
+        protected void StudentsGridView_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            //set the new page number
+            StudentsGridView.PageIndex = e.NewPageIndex;
+
+            //refresh the grid
+            this.GetStudents();
+        }
     }
 }
