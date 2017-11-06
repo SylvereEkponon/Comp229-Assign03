@@ -6,10 +6,7 @@
     <div class="row">
         <div class="col-md-offset-4 col-md-4">
 
-            <h1>Student List</h1>
-            <a href="StudentDetails.aspx" class="btn btn-success btn-sm">
-                <i class="fa fa-plus"></i> Enroll A Student
-            </a>
+            <h2>Courses List</h2>
 
             <asp:GridView ID="StudentsPerCourseGridView" runat="server" AutoGenerateColumns="false"
                 CssClass="table  table-bordered table-striped table-hover" 

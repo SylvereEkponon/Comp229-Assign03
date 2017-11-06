@@ -40,7 +40,7 @@ namespace Comp229_Assign03
                 {
                     LastNameTextBox.Text = aStudent.LastName;
                     FirstNameTextBox.Text = aStudent.FirstMidName;
-                    EnrollmentDateTextBox.Text = Convert.ToString(aStudent.EnrollmentDate);
+                    EnrollmentDateTextBox.Text = aStudent.EnrollmentDate.ToString("yyyy-MM-dd");
                 }
             }
         }

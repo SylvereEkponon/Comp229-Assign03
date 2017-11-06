@@ -3,7 +3,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
         
-        <h2>STUDENT</h2>
+        <h2>Student List </h2>
         <hr />
         <asp:GridView ID="StudentGridView" runat="server" AutoGenerateColumns="false"
             CssClass="table  table-bordered table-striped table-hover" >
