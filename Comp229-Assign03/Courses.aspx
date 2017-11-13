@@ -24,6 +24,7 @@
                     </asp:GridView>
                 </ContentTemplate>
             </asp:UpdatePanel>
+            <a class="btn btn-primary btn-sm" href="Default.aspx">Back to Home</a>
         </div>
 
     </div>

@@ -42,7 +42,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li id="student" runat="server"><a href="Students.aspx"><i class="fa fa-user-o fa-lg" aria-hidden="true"></i>  Student</a></li>
                             <li id="course" runat="server"><a href="Courses.aspx"><i class="fa fa-book fa-lg" aria-hidden="true"></i>  Courses</a></li>
-                            <li id="update" runat="server"><a href="Update.aspx"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i>  Update</a></li>
+                            <li id="update" runat="server"><a href="Updates.aspx"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i>  Update</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -64,8 +64,8 @@
 
 
     <!--Javascript session-->
-    <script src="Scripts/jquery-2.2.4.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
-    <script src="Scripts/app.js"></script>
+    <script src="/Scripts/jquery-2.2.4.min.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/app.js"></script>
 </body>
 </html>
