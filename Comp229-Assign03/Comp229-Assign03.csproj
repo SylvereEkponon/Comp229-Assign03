@@ -83,6 +83,7 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Courses.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="EnrollStudent.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -137,6 +138,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EnrollStudent.aspx.cs">
+      <DependentUpon>EnrollStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EnrollStudent.aspx.designer.cs">
+      <DependentUpon>EnrollStudent.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

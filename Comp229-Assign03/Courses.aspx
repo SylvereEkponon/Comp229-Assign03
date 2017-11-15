@@ -7,6 +7,9 @@
         <div class="col-md-offset-4 col-md-4">
 
             <h2>Student List</h2>
+            <a href="EnrollStudent.aspx" class="btn btn-success btn-sm">
+                <i class="fa fa-plus"></i> Enroll New Student
+            </a>
             <asp:UpdatePanel ID="studentUpdatePanel" runat="server">
                 <ContentTemplate>
                     <asp:GridView ID="StudentsPerCourseGridView" runat="server" AutoGenerateColumns="false"
