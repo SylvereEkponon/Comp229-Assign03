@@ -11,7 +11,26 @@ namespace Comp229_Assign03
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            this.SetActivePage();
+        }
 
+        private void SetActivePage()
+        {
+            switch (Page.Title)
+            {
+                case "Updates":
+                    update.Attributes.Add("class", "active");
+                    break;
+                case "Students":
+                    student.Attributes.Add("class", "active");
+                    break;
+                case "Courses":
+                    course.Attributes.Add("class", "active");
+                    break;
+                case "Home":
+                    home.Attributes.Add("class", "active");
+                    break;
+            }
         }
     }
 }
